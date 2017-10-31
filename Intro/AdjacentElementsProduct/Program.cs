@@ -10,7 +10,7 @@ namespace AdjacentElementsProduct
     {
         static  int AdjacentElementsProduct(int[] inputArray)
         {
-            int largestProduct = 0;
+            int largestProduct = inputArray[0]* inputArray[1];
             int thisProduct = 0;
             for (int i = 0; i < inputArray.Length-1; i++)
             {
@@ -25,7 +25,7 @@ namespace AdjacentElementsProduct
         }
         static void Main(string[] args)
         {
-            int [] inputArray =  { 3, 6, -2, -5, 7, 3};
+            int [] inputArray =  { -23, 4, -3, 8, -12 };
             Console.WriteLine(AdjacentElementsProduct(inputArray));
             Console.ReadKey();
         }
