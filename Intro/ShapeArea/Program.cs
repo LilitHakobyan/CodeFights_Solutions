@@ -15,7 +15,7 @@ namespace ShapeArea
             }
             int S = 0;
             S = 2 * n + 2 * (n - 2);
-            n -= 1;
+            n --;
             if (n!=1)
             {
                 S+=shapeArea(n);
