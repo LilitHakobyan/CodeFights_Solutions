@@ -11,22 +11,22 @@ namespace ShapeArea
         {
             if (n==1)
             {
-                return 0;
+                return 1;
             }
             int S = 0;
             S = 2 * n + 2 * (n - 2);
             n --;
             if (n!=1)
             {
-                S+=shapeArea(n);
+                S+=shapeArea(n)-1;
             }
             
-            return S;
+            return S+1;
         }
 
         static void Main(string[] args)
         {
-            Console.WriteLine(shapeArea(3)+1);
+            Console.WriteLine(shapeArea(3));
             Console.ReadKey();
         }
     }
