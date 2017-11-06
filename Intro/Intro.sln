@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "almostIncreasingSequence", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matrixElementsSum", "matrixElementsSum\matrixElementsSum.csproj", "{3BC45278-35C0-437E-8727-DEDAB5175B72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "allLongestStrings", "allLongestStrings\allLongestStrings.csproj", "{AF038008-A03F-46E6-AB5F-9FC29C8EEF63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3BC45278-35C0-437E-8727-DEDAB5175B72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BC45278-35C0-437E-8727-DEDAB5175B72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BC45278-35C0-437E-8727-DEDAB5175B72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF038008-A03F-46E6-AB5F-9FC29C8EEF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF038008-A03F-46E6-AB5F-9FC29C8EEF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF038008-A03F-46E6-AB5F-9FC29C8EEF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF038008-A03F-46E6-AB5F-9FC29C8EEF63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
