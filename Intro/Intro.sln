@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdjacentElementsProduct", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeArea", "ShapeArea\ShapeArea.csproj", "{B0677906-E47F-405F-9C1E-9220F7E84E80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "makeArrayConsecutive2", "makeArrayConsecutive2\makeArrayConsecutive2.csproj", "{E725A6A3-B799-457F-9016-26DB89B80548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "almostIncreasingSequence", "almostIncreasingSequence\almostIncreasingSequence.csproj", "{4DBEDA9B-417B-446C-B23E-474BE5A6EEDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{B0677906-E47F-405F-9C1E-9220F7E84E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0677906-E47F-405F-9C1E-9220F7E84E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0677906-E47F-405F-9C1E-9220F7E84E80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E725A6A3-B799-457F-9016-26DB89B80548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E725A6A3-B799-457F-9016-26DB89B80548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E725A6A3-B799-457F-9016-26DB89B80548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E725A6A3-B799-457F-9016-26DB89B80548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DBEDA9B-417B-446C-B23E-474BE5A6EEDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DBEDA9B-417B-446C-B23E-474BE5A6EEDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DBEDA9B-417B-446C-B23E-474BE5A6EEDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DBEDA9B-417B-446C-B23E-474BE5A6EEDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
