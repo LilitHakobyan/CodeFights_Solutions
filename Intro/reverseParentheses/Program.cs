@@ -8,9 +8,9 @@ namespace reverseParentheses
 {
     class Program
     {
-        public static char[] Remove(char [] innerArray, int indexOfItem)
+        public static char[] Remove(char[] innerArray, int indexOfItem)
         {
-            char [] tempArr = new char[innerArray.Length - 1];
+            char[] tempArr = new char[innerArray.Length - 1];
             try
             {
                 for (int i = 0; i < indexOfItem; i++)
@@ -22,7 +22,7 @@ namespace reverseParentheses
                     tempArr[i] = innerArray[i + 1];
 
                 }
-             
+
             }
             catch (ArgumentException)
             {
@@ -30,27 +30,31 @@ namespace reverseParentheses
             }
             return tempArr;
         }
-        public static  int  FindIndex(string s,char simbol)
+        public static int FindIndex(string s, char simbol)
         {
-            if (simbol=='(')
+            int k = -1;
+            if (simbol == '(')
             {
                 for (int i = 0; i < s.Length; i++)
                 {
                     if (s[i] == simbol)
                     {
-                        return i;
+                        k = i;
                     }
                 }
+                return k;
             }
+            int c = -1;
             if (simbol == ')')
             {
-                for (int i = s.Length-1; i >-1; i--)
+                for (int i = s.Length - 1; i > -1; i--)
                 {
                     if (s[i] == simbol)
                     {
-                        return i;
+                        c = i;
                     }
                 }
+                return c;
             }
             return -1;
         }
@@ -66,7 +70,7 @@ namespace reverseParentheses
             int endIndex = 0;
             startIndex = FindIndex(s, '(');
             endIndex = FindIndex(s, ')');
-            while (startIndex!=-1)
+            while (startIndex != -1)
             {
                 int length = endIndex - startIndex - 1;
                 string subSt = s.Substring(startIndex + 1, length);
@@ -79,21 +83,33 @@ namespace reverseParentheses
                     j++;
                 }
                 StrCharArray = Remove(StrCharArray, startIndex);
-                StrCharArray = Remove(StrCharArray, endIndex-1);
+                StrCharArray = Remove(StrCharArray, endIndex - 1);
                 s = string.Join("", StrCharArray);
 
                 startIndex = FindIndex(s, '(');
                 endIndex = FindIndex(s, ')');
             }
-                
-                     
-           return s;
 
 
+            return s;
+
+            //while (s.Contains('('))
+            //{
+            //    int rightEnd = s.IndexOf(')');
+            //    int leftEnd = s.Substring(0, rightEnd).LastIndexOf('(');
+            //    string builder = s.Substring(0, leftEnd);
+            //    for (int x = rightEnd - 1; x > leftEnd; x--)
+            //    {
+            //        builder += s[x];
+            //    }
+            //    builder += s.Substring(rightEnd + 1);
+            //    s = builder;
+            //}
+            //return s;
         }
         static void Main(string[] args)
         {
-            string s = " a(bcdefghijkl(mno)p)q";
+            string s = "abc(cba)ab(bac)c";
             Console.WriteLine(reverseParentheses(s));
 
         }
