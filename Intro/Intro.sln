@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdjacentElementsProduct", "AdjacentElementsProduct\AdjacentElementsProduct.csproj", "{7F24D638-74C4-43B2-A9F2-F7B4EF346E57}"
 EndProject
@@ -28,6 +28,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "addBorder", "addBorder\addBorder.csproj", "{7743C22D-DA06-46CC-B49B-4376A8B217BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "areSimilar", "areSimilar\areSimilar.csproj", "{2CF4E525-F054-43B2-98A0-7DAEE120296F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arrayChange", "arrayChange\arrayChange.csproj", "{BC663CE0-3B59-4816-8421-53F73C89BA86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "palindromeRearranging", "palindromeRearranging\palindromeRearranging.csproj", "{A01BC067-803E-4F18-B3B9-F1309A87C6F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "areEquallyStrong", "areEquallyStrong\areEquallyStrong.csproj", "{022741FD-D85B-40E2-B238-E0D677BB29B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arrayMaximalAdjacentDifference", "arrayMaximalAdjacentDifference\arrayMaximalAdjacentDifference.csproj", "{0D1B5F54-8050-4DEA-91B3-0E14A04DDA7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "isIPv4Address", "isIPv4Address\isIPv4Address.csproj", "{46B46197-9651-46A3-867E-DBE77A070F90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +97,26 @@ Global
 		{2CF4E525-F054-43B2-98A0-7DAEE120296F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CF4E525-F054-43B2-98A0-7DAEE120296F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CF4E525-F054-43B2-98A0-7DAEE120296F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC663CE0-3B59-4816-8421-53F73C89BA86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC663CE0-3B59-4816-8421-53F73C89BA86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC663CE0-3B59-4816-8421-53F73C89BA86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC663CE0-3B59-4816-8421-53F73C89BA86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A01BC067-803E-4F18-B3B9-F1309A87C6F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A01BC067-803E-4F18-B3B9-F1309A87C6F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A01BC067-803E-4F18-B3B9-F1309A87C6F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A01BC067-803E-4F18-B3B9-F1309A87C6F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{022741FD-D85B-40E2-B238-E0D677BB29B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{022741FD-D85B-40E2-B238-E0D677BB29B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{022741FD-D85B-40E2-B238-E0D677BB29B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{022741FD-D85B-40E2-B238-E0D677BB29B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D1B5F54-8050-4DEA-91B3-0E14A04DDA7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D1B5F54-8050-4DEA-91B3-0E14A04DDA7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D1B5F54-8050-4DEA-91B3-0E14A04DDA7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D1B5F54-8050-4DEA-91B3-0E14A04DDA7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B46197-9651-46A3-867E-DBE77A070F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B46197-9651-46A3-867E-DBE77A070F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B46197-9651-46A3-867E-DBE77A070F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B46197-9651-46A3-867E-DBE77A070F90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
