@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper", "Minesweeper\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "variableName", "variableName\variableName.csproj", "{978F00CB-858E-4B7B-8446-71547BF7B179}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chessBoardCellColor", "chessBoardCellColor\chessBoardCellColor.csproj", "{FD7B2C3E-4CF9-4274-B7E9-99200A944043}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThroughTheFog30_33", "ThroughTheFog30_33\ThroughTheFog30_33.csproj", "{64FB03E0-8B51-4F91-B558-C8F6E1948E14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +145,14 @@ Global
 		{978F00CB-858E-4B7B-8446-71547BF7B179}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{978F00CB-858E-4B7B-8446-71547BF7B179}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{978F00CB-858E-4B7B-8446-71547BF7B179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD7B2C3E-4CF9-4274-B7E9-99200A944043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD7B2C3E-4CF9-4274-B7E9-99200A944043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD7B2C3E-4CF9-4274-B7E9-99200A944043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD7B2C3E-4CF9-4274-B7E9-99200A944043}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64FB03E0-8B51-4F91-B558-C8F6E1948E14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64FB03E0-8B51-4F91-B558-C8F6E1948E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64FB03E0-8B51-4F91-B558-C8F6E1948E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64FB03E0-8B51-4F91-B558-C8F6E1948E14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

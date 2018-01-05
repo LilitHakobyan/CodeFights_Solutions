@@ -27,10 +27,30 @@ namespace variableName
             var regex = new Regex(@"^[a-zA-Z_][a-zA-Z_\d]*$");
             return regex.IsMatch(name);
         }
+       public static  string alphabeticShift(string inputString)
+       {
+           string replacedSt = string.Empty;
+            for (int i = 0; i < inputString.Length; i++)
+            {
+                int ansi =  inputString[i];
+                if (ansi == 122)
+                {
+                    replacedSt += (char)97;
+                }
+                else
+                {
+                    replacedSt += (char)(ansi + 1);
+                }
+            }
+           return replacedSt;
+       }
+
         static void Main(string[] args)
         {
-            string name = "var_1__Int";
-            Console.WriteLine(variableName(name));
+            //string name = "var_1__Int";
+            //Console.WriteLine(variableName(name));
+            string inputString = "azzy";
+            Console.WriteLine(alphabeticShift(inputString));
 
         }
 
