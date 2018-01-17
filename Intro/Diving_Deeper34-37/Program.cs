@@ -54,7 +54,7 @@ namespace Diving_Deeper34_37
             return MaxSum;
         }
 
-        //
+        //39
        public static int knapsackLight(int value1, int weight1, int value2, int weight2, int maxW)
        {
            if (weight2 > maxW && weight1 > maxW)
@@ -65,6 +65,43 @@ namespace Diving_Deeper34_37
                return value2;
            return weight1 + weight2 <= maxW ? value1 + value2 : Math.Max(value1, value2);
         }
+        //40
+       public static string longestDigitsPrefix(string inputString)
+        {string outputSt=String.Empty;
+            for (int i = 0; i < inputString.Length; i++)
+            {
+                if (char.IsNumber(inputString[i]))
+                    outputSt += inputString[i];
+                else
+                {
+                    break;
+                }
+            }
+            return outputSt;
+        }
+        //41
+       public static int digitDegree(int n)
+       {
+           int count = 0;
+           int sum = 0;
+           if (n < 10)
+               return 0;
+           do
+           {
+               while (n != 0)
+               {
+                   sum += n % 10;
+                   n = n / 10;
+               }
+               n = sum;
+               count++;
+           } while (sum < 10);
+           return count;
+
+       }
+
+
+
 
         static void Main(string[] args)
         {   //34
