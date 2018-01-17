@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chessBoardCellColor", "ches
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThroughTheFog30_33", "ThroughTheFog30_33\ThroughTheFog30_33.csproj", "{64FB03E0-8B51-4F91-B558-C8F6E1948E14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diving_Deeper34-37", "Diving_Deeper34-37\Diving_Deeper34-37.csproj", "{09D4F266-89E8-43DB-8B2C-19D91B4AFDA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{64FB03E0-8B51-4F91-B558-C8F6E1948E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64FB03E0-8B51-4F91-B558-C8F6E1948E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64FB03E0-8B51-4F91-B558-C8F6E1948E14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D4F266-89E8-43DB-8B2C-19D91B4AFDA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D4F266-89E8-43DB-8B2C-19D91B4AFDA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D4F266-89E8-43DB-8B2C-19D91B4AFDA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D4F266-89E8-43DB-8B2C-19D91B4AFDA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
