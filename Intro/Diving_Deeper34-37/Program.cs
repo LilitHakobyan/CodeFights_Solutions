@@ -55,19 +55,20 @@ namespace Diving_Deeper34_37
         }
 
         //39
-       public static int knapsackLight(int value1, int weight1, int value2, int weight2, int maxW)
-       {
-           if (weight2 > maxW && weight1 > maxW)
-               return 0;
-           if (weight1 == maxW && weight2 > maxW)
-               return value1;
-           if (weight2 == maxW && weight1 > maxW)
-               return value2;
-           return weight1 + weight2 <= maxW ? value1 + value2 : Math.Max(value1, value2);
+        public static int knapsackLight(int value1, int weight1, int value2, int weight2, int maxW)
+        {
+            if (weight2 > maxW && weight1 > maxW)
+                return 0;
+            if (weight1 == maxW && weight2 > maxW)
+                return value1;
+            if (weight2 == maxW && weight1 > maxW)
+                return value2;
+            return weight1 + weight2 <= maxW ? value1 + value2 : Math.Max(value1, value2);
         }
         //40
-       public static string longestDigitsPrefix(string inputString)
-        {string outputSt=String.Empty;
+        public static string longestDigitsPrefix(string inputString)
+        {
+            string outputSt = String.Empty;
             for (int i = 0; i < inputString.Length; i++)
             {
                 if (char.IsNumber(inputString[i]))
@@ -80,26 +81,32 @@ namespace Diving_Deeper34_37
             return outputSt;
         }
         //41
-       public static int digitDegree(int n)
-       {
-           int count = 0;
-           int sum = 0;
-           if (n < 10)
-               return 0;
-           do
-           {
-               while (n != 0)
-               {
-                   sum += n % 10;
-                   n = n / 10;
-               }
-               n = sum;
-               count++;
-           } while (sum < 10);
-           return count;
+        public static int digitDegree(int n)
+        {
+            int count = 0;
+            int sum = 0;
+            if (n < 10)
+                return 0;
+            do
+            {
+                sum = 0;
+                while (n != 0)
+                {
+                    sum += n % 10;
+                    n = n / 10;
+                }
+                n = sum;
+                count++;
+            }
+            while (sum >= 10);
+            return count;
+        }
 
-       }
-
+        //42
+        bool bishopAndPawn(string bishop, string pawn)
+        {
+            return Math.Abs(bishop[0] - pawn[0]) == Math.Abs(bishop[1] - pawn[1]);
+        }
 
 
 
@@ -108,11 +115,12 @@ namespace Diving_Deeper34_37
             //int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
             //int [] res=extractEachKth(arr,3);
             //for (int i = 0; i < res.Length; i++)
-            //{
+            //{ 
             //    Console.Write($"{res[i]},");
             //}
             //35
 
         }
+        
     }
 }
