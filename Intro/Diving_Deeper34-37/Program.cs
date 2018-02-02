@@ -126,9 +126,9 @@ namespace Diving_Deeper34_37
                 arr[j] = count;
                 count = 0;
             }
-               
-            
-            for (int i = 0; i < arr.Length-1; i++)
+
+
+            for (int i = 0; i < arr.Length - 1; i++)
             {
                 if (arr[i] > arr[i + 1])
                     return false;
@@ -148,6 +148,6 @@ namespace Diving_Deeper34_37
             string inp = "bbc";
             isBeautifulString(inp);
         }
-        
+
     }
 }
