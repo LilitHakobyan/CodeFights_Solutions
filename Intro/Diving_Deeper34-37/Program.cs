@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -107,8 +108,33 @@ namespace Diving_Deeper34_37
         {
             return Math.Abs(bishop[0] - pawn[0]) == Math.Abs(bishop[1] - pawn[1]);
         }
-
-
+        //43
+        public static bool isBeautifulString(string inputString)
+        {
+            List<char> list = inputString.ToList();
+            list.Sort();
+            var diList = list.Distinct().ToArray();
+            int[] arr = new int[diList.Length];
+            int count = 0;
+            for (int j = 0; j < diList.Length; j++)
+            {
+                for (int i = 0; i < inputString.Length; i++)
+                {
+                    if (diList[j] == inputString[i])
+                        count++;
+                }
+                arr[j] = count;
+                count = 0;
+            }
+               
+            
+            for (int i = 0; i < arr.Length-1; i++)
+            {
+                if (arr[i] > arr[i + 1])
+                    return false;
+            }
+            return true;
+        }
 
         static void Main(string[] args)
         {   //34
@@ -119,7 +145,8 @@ namespace Diving_Deeper34_37
             //    Console.Write($"{res[i]},");
             //}
             //35
-
+            string inp = "bbc";
+            isBeautifulString(inp);
         }
         
     }
