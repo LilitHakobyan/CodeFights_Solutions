@@ -135,6 +135,12 @@ namespace Diving_Deeper34_37
             }
             return true;
         }
+        //44
+        static string findEmailDomain(string address)
+        {
+            var splits = address.Split('@');
+            return splits.Last();
+        }
 
         static void Main(string[] args)
         {   //34
