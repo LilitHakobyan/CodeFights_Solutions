@@ -141,18 +141,76 @@ namespace Diving_Deeper34_37
             var splits = address.Split('@');
             return splits.Last();
         }
+        //45
+        static string buildPalindrome(string str)
+        {
+            string reverseStr = new string(str.ToCharArray().Reverse().ToArray());
+            int len = 0;
+            for (len = reverseStr.Length; len > 0 && str.LastIndexOf(reverseStr.Substring(0, len)) != str.Length - len; len--) ;
+            return str + reverseStr.Substring(len);
 
+        }
+        //46
+        static int electionsWinners(int[] votes, int k)
+        {
+            int count = 0;
+            int currentVotes = votes[0];
+            bool flag = true;
+            for (int i = 0; i < votes.Length; i++)
+            {
+                currentVotes = votes[i] + k;
+                flag = true;
+                for (int j = 0; j < votes.Length; j++)
+                {
+                    if (votes[j] >= currentVotes && i != j)
+                    {
+                        flag = false;
+                        break;
+                    }
+                }
+                if (flag)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+        //47
+        static bool isMAC48Address(string str)
+        {
+            if (str.Length != 17)
+                return false;
+            if (!(str[2] == '-' && str[5] == '-' && str[8] == '-' && str[11] == '-' && str[14] == '-'))
+                return false;
+            string num = "0123456789";
+            string let = "ABCDEF";
+            for (int i = 0; i < str.Length; i++)
+            {
+                if(i==2||i==5||i==8||i==11||i==14)
+                    continue;
+                if (!(num.Contains(str[i]) || let.Contains(str[i])))
+                {
+                        return false;
+                }
+
+            }
+            return true;
+        }
+    
         static void Main(string[] args)
         {   //34
-            //int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            int[] arr = { 2, 3, 5, 2 };
             //int [] res=extractEachKth(arr,3);
             //for (int i = 0; i < res.Length; i++)
             //{ 
             //    Console.Write($"{res[i]},");
             //}
             //35
-            string inp = "bbc";
-            isBeautifulString(inp);
+            //string inp = "bbc";
+            //isBeautifulString(inp);
+           // electionsWinners(arr, 3);
+            string mac = "AB-CD-EF-12-34_56";
+            isMAC48Address(mac);
         }
 
     }
