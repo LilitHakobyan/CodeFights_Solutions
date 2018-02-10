@@ -186,17 +186,42 @@ namespace Diving_Deeper34_37
             string let = "ABCDEF";
             for (int i = 0; i < str.Length; i++)
             {
-                if(i==2||i==5||i==8||i==11||i==14)
+                if (i == 2 || i == 5 || i == 8 || i == 11 || i == 14)
                     continue;
                 if (!(num.Contains(str[i]) || let.Contains(str[i])))
                 {
-                        return false;
+                    return false;
                 }
 
             }
             return true;
         }
-    
+
+        //49
+        static string lineEncoding(string s)
+        {
+
+            int count = 1;
+            string concatStr = String.Empty;
+            List<char> let=new List<char>(){s.First()};
+            List<int> num=new List<int>();
+            for (int i = 1; i < s.Length; i++)
+            {
+                if (let.Last() != s[i])
+                {
+                    let.Add(s[i]);
+                    num.Add(count);
+                    count = 1;
+                }
+                else count++;
+            }
+            if (let.Count != num.Count) num.Add(count);
+            for (int i = 0; i < let.Count; i++)
+                concatStr += $"{num[i]}{let[i]}";
+            
+            return concatStr.Replace("1","");
+        }
+
         static void Main(string[] args)
         {   //34
             int[] arr = { 2, 3, 5, 2 };
@@ -208,9 +233,11 @@ namespace Diving_Deeper34_37
             //35
             //string inp = "bbc";
             //isBeautifulString(inp);
-           // electionsWinners(arr, 3);
-            string mac = "AB-CD-EF-12-34_56";
-            isMAC48Address(mac);
+            // electionsWinners(arr, 3);
+            //string mac = "AB-CD-EF-12-34_56";
+            //isMAC48Address(mac);
+            string s = "aabbbc";
+            Console.WriteLine(lineEncoding(s));
         }
 
     }
