@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdjacentElementsProduct", "AdjacentElementsProduct\AdjacentElementsProduct.csproj", "{7F24D638-74C4-43B2-A9F2-F7B4EF346E57}"
 EndProject
@@ -52,6 +52,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThroughTheFog30_33", "ThroughTheFog30_33\ThroughTheFog30_33.csproj", "{64FB03E0-8B51-4F91-B558-C8F6E1948E14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diving_Deeper34-37", "Diving_Deeper34-37\Diving_Deeper34-37.csproj", "{09D4F266-89E8-43DB-8B2C-19D91B4AFDA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "38-48", "38-48\38-48.csproj", "{C2062B49-B68A-4EB8-974E-6A80BFE20834}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +161,10 @@ Global
 		{09D4F266-89E8-43DB-8B2C-19D91B4AFDA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09D4F266-89E8-43DB-8B2C-19D91B4AFDA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09D4F266-89E8-43DB-8B2C-19D91B4AFDA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2062B49-B68A-4EB8-974E-6A80BFE20834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2062B49-B68A-4EB8-974E-6A80BFE20834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2062B49-B68A-4EB8-974E-6A80BFE20834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2062B49-B68A-4EB8-974E-6A80BFE20834}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
