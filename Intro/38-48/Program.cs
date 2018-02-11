@@ -174,6 +174,55 @@ namespace _38_48
 
             return concatStr.Replace("1", "");
         }
+        //50
+        int chessKnight1(string cell)
+        {
+            var results = new int[] { 2, 3, 4, 6, 8 };
+            int dist1 = Math.Min(Math.Min(cell[0] - 'a', 'h' - cell[0]), 2);
+            int dist2 = Math.Min(Math.Min(cell[1] - '1', '8' - cell[1]), 2);
+            return results[dist1 + dist2];
+        }
+        int chessKnight(string cell)
+        {
+            int xDist = Math.Min(cell[0] - 'a', 'h' - cell[0]);
+            int yDist = Math.Min(cell[1] - '1', '8' - cell[1]);
+            if (xDist > 1 && yDist > 1)
+                return 8;
+            else if (xDist + yDist == 3)
+                return 6;
+            else if (xDist + yDist == 2)
+                return 4;
+            else if (xDist + yDist == 1)
+                return 3;
+            else
+                return 2;
+        }
+
+        //51
+        static int deleteDigit(int n)
+        {
+           var list = n.ToString().ToList();
+           int[] numArr=new int[list.Count];
+            for (int i = 0; i < list.Count; i++)
+            {
+                list.RemoveAt(i);
+                numArr[i]=Int32.Parse(new string(list.ToArray()));
+                list = n.ToString().ToList();
+            }
+            return numArr.Max();
+            //var s = n.ToString();
+            //int max = 0;
+            //for (int i = 0; i < s.Length; i++)
+            //{
+            //    n = int.Parse(s.Remove(i, 1));
+            //    if (n > max)
+            //        max = n;
+            //}
+            // return max;
+        }
+
+
+
         static void Main(string[] args)
         {
             //string inp = "bbc";
@@ -181,8 +230,10 @@ namespace _38_48
             // electionsWinners(arr, 3);
             //string mac = "AB-CD-EF-12-34_56";
             //isMAC48Address(mac);
-            string s = "aabbbc";
-            Console.WriteLine(lineEncoding(s));
+            //string s = "aabbbc";
+            //Console.WriteLine(lineEncoding(s));
+            int n = 152;
+            deleteDigit(n);
         }
     }
 }

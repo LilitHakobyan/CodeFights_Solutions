@@ -53,7 +53,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThroughTheFog30_33", "Throu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diving_Deeper34-37", "Diving_Deeper34-37\Diving_Deeper34-37.csproj", "{09D4F266-89E8-43DB-8B2C-19D91B4AFDA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "38-48", "38-48\38-48.csproj", "{C2062B49-B68A-4EB8-974E-6A80BFE20834}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "38-51", "38-48\38-51.csproj", "{C2062B49-B68A-4EB8-974E-6A80BFE20834}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
