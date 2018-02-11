@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diving_Deeper34-37", "Divin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "38-51", "38-48\38-51.csproj", "{C2062B49-B68A-4EB8-974E-6A80BFE20834}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Land of Logic 52-60", "Land of Logic 52-60\Land of Logic 52-60.csproj", "{8600EA98-B540-4EF6-8113-006DA2FDDE32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{C2062B49-B68A-4EB8-974E-6A80BFE20834}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2062B49-B68A-4EB8-974E-6A80BFE20834}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2062B49-B68A-4EB8-974E-6A80BFE20834}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8600EA98-B540-4EF6-8113-006DA2FDDE32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8600EA98-B540-4EF6-8113-006DA2FDDE32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8600EA98-B540-4EF6-8113-006DA2FDDE32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8600EA98-B540-4EF6-8113-006DA2FDDE32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
