@@ -37,11 +37,28 @@ namespace Land_of_Logic_52_60
             }
            return maxStr;
        }
+        //53
+        static bool validTime(string time)
+        {
+            int firstPart = Convert.ToInt32(String.Concat(time[0], time[1]));
+            int lastPart = Convert.ToInt32(String.Concat(time[3], time[4]));
+           
+            if (firstPart < 0 || firstPart > 23)
+                return false;
+            if (lastPart < 0 || lastPart > 59)
+                return false;
+         
+
+            return true;
+        }
+
 
         static void Main(string[] args)
         {
-            string str = "To be or not to be";
-            longestWord(str);
+            //string str = "To be or not to be";
+            //longestWord(str);
+            string time = "13:58";
+            validTime(time);
         }
     }
 }
