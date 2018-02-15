@@ -107,6 +107,47 @@ namespace Land_of_Logic_52_60
 
             return int.Parse(digits);
         }
+        //57
+        string[] fileNaming(string[] names)
+        {
+            //var dict = new List<string>();
+            //foreach (var name in names)
+            //{
+            //    if (dict.Contains(name))
+            //    {
+            //        var k = 1;
+            //        while (true)
+            //        {
+            //            var tmp = name + "(" + k + ")";
+            //            if (!dict.Contains(tmp))
+            //            {
+            //                dict.Add(tmp);
+            //                break;
+            //            }
+            //            k++;
+            //        }
+            //    }
+            //    else
+            //    {
+            //        dict.Add(name);
+            //    }
+            //}
+            //return dict.ToArray();
+
+            var filenames = new HashSet<string>();
+            foreach (var s in names)
+            {
+                if (!filenames.Add(s))
+                {
+                    var i = 1;
+                    while (!filenames.Add(string.Format("{0}({1})", s, i)))
+                    {
+                        i++;
+                    }
+                }
+            }
+            return filenames.ToArray();
+        }
         static void Main(string[] args)
         {
             //string str = "To be or not to be";
