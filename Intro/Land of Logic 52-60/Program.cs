@@ -51,14 +51,50 @@ namespace Land_of_Logic_52_60
 
             return true;
         }
-
+        //54
+       static int sumUpNumbers(string inputString)
+       {
+           int sum = 0;
+           string app = string.Empty;
+           for (int i = 0; i < inputString.Length; i++)
+           {
+               if (Char.IsDigit(inputString[i]))
+               {
+                   while (Char.IsDigit(inputString[i]))
+                   {
+                       app += inputString[i];
+                       i++;
+                        if(i>inputString.Length-1)
+                            break;
+                   }
+                   sum += Convert.ToInt32(app);
+                   app = string.Empty;
+               }
+               
+           }
+           return sum;
+       }
+        //55
+       static int differentSquares(int[][] matrix)
+        {
+            List<int> list = new List<int>();
+            for (var i = 0; i < matrix.Length - 1; i++)
+            {
+                for (var j = 0; j < matrix[0].Length - 1; j++)
+                {
+                    list.Add(matrix[i][j] + matrix[i + 1][j + 1] * 10 +
+                             matrix[i + 1][j] * 100 + matrix[i][j + 1] * 1000);
+                }
+            }
+            return list.Distinct().Count();
+        }
 
         static void Main(string[] args)
         {
             //string str = "To be or not to be";
             //longestWord(str);
-            string time = "13:58";
-            validTime(time);
+            string inputString = "123";
+            sumUpNumbers(inputString);
         }
     }
 }
