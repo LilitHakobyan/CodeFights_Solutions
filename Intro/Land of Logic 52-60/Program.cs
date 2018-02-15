@@ -148,6 +148,28 @@ namespace Land_of_Logic_52_60
             }
             return filenames.ToArray();
         }
+        //58
+        string messageFromBinaryCode(string code)
+        {
+            var sb = new StringBuilder();
+            for (int i = 0; i < code.Length; i += 8)
+            {
+                sb.Append((char)Convert.ToInt32(code.Substring(i, 8), 2));
+            }
+            return sb.ToString();
+
+            //string result = "";
+            //for (int i = 0; i < code.Length - 7; i += 8)
+            //{
+            //    string numBin = "";
+            //    for (int j = 0; j < 8; j++)
+            //    {
+            //        numBin += code[i + j];
+            //    }
+            //    result += (char)Convert.ToInt32(numBin, 2);
+            //}
+            //return result;
+        }
         static void Main(string[] args)
         {
             //string str = "To be or not to be";
