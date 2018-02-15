@@ -88,7 +88,25 @@ namespace Land_of_Logic_52_60
             }
             return list.Distinct().Count();
         }
+        //56
+       static int digitsProduct(int product)
+        {
+            if (product == 0) return 10;
+            if (product == 1) return 1;
+            string digits = "";
+            for (int divisor = 9; divisor > 0; divisor--)
+            {
+                while (product % divisor == 0)
+                {
+                    product /= divisor;
+                    digits = divisor.ToString() + digits;
+                }
+            }
 
+            if (product > 1) return -1;
+
+            return int.Parse(digits);
+        }
         static void Main(string[] args)
         {
             //string str = "To be or not to be";
