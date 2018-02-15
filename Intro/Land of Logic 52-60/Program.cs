@@ -94,7 +94,7 @@ namespace Land_of_Logic_52_60
             if (product == 0) return 10;
             if (product == 1) return 1;
             string digits = "";
-            for (int divisor = 9; divisor > 0; divisor--)
+            for (int divisor = 9; divisor >1; divisor--)
             {
                 while (product % divisor == 0)
                 {
