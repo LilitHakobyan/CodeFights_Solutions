@@ -170,6 +170,27 @@ namespace Land_of_Logic_52_60
             //}
             //return result;
         }
+        //59
+         static  int[][] spiralNumbers(int n)
+        {
+            int[][] matrix=new int[n][];
+
+            for (int i = 0; i < n*n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    matrix[i][j] = j;
+                    if (j == n - 1)
+                    {
+                        for (int k = i+1; k < n-1; k++)
+                        {
+                            matrix[k][j] = k;
+                        }
+                    }
+                }
+            }
+            return matrix;
+        }
         static void Main(string[] args)
         {
             //string str = "To be or not to be";
