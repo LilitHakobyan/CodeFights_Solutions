@@ -173,23 +173,42 @@ namespace Land_of_Logic_52_60
         //59
          static  int[][] spiralNumbers(int n)
         {
-            int[][] matrix=new int[n][];
-
-            for (int i = 0; i < n*n; i++)
+            int[][] a = new int[n][];
+            for (int i = 0; i < n; i++)
             {
-                for (int j = 0; j < n; j++)
-                {
-                    matrix[i][j] = j;
-                    if (j == n - 1)
-                    {
-                        for (int k = i+1; k < n-1; k++)
-                        {
-                            matrix[k][j] = k;
-                        }
-                    }
-                }
+                a[i] = new int[n];
             }
-            return matrix;
+            int square = n * n;
+            int l1 = 0,
+                l2 = 0,
+                l3 = n - 1,
+                l4 = n - 1,
+                c = 1;
+            while (true)
+            {
+                for (int lr = l1; lr <= l3; lr++)
+                { // left to right
+                    a[l2][lr] = c++;
+                }
+                l2++;
+                for (int tb = l2; tb <= l4; tb++)
+                { // top to bottom
+                    a[tb][l3] = c++;
+                }
+                l3--;
+                for (int rl = l3; rl >= l1; rl--)
+                { // right to left
+                    a[l4][rl] = c++;
+                }
+                l4--;
+                for (int bt = l4; bt >= l2; bt--)
+                { // bottom to top
+                    a[bt][l1] = c++;
+                }
+                l1++;
+                if (c > square) break;
+            }
+            return a;
         }
         static void Main(string[] args)
         {
