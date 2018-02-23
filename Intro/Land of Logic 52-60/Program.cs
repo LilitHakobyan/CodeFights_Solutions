@@ -247,6 +247,27 @@ namespace Land_of_Logic_52_60
 
             return true;
         }
+        //bool sudoku(int[][] a)
+        //{
+        //    for (int i = 0; i < 9; i++)
+        //    for (int j = 0; j < 9; j++)
+        //    {
+        //        for (int k = 0; k < 9; k++)
+        //            if (j != k && a[i][j] == a[i][k])
+        //                return false;
+        //        for (int k = 0; k < 9; k++)
+        //            if (i != k && a[i][j] == a[k][j])
+        //                return false;
+        //        int t = i / 3, p = j / 3;
+        //        t *= 3;
+        //        p *= 3;
+        //        for (int k = 0; k < 3; k++)
+        //        for (int l = 0; l < 3; l++)
+        //            if (i != k + t && j != l + p && a[i][j] == a[k + t][l + p])
+        //                return false;
+        //    }
+        //    return true;
+        //}
         //60 using hashSet
         //bool sudoku(int[][] matrix)
         //{
@@ -270,9 +291,9 @@ namespace Land_of_Logic_52_60
         //    }
 
         //   return true;
-    //}
+        //}
 
-    static void Main(string[] args)
+        static void Main(string[] args)
         {
             //string str = "To be or not to be";
             //longestWord(str);
