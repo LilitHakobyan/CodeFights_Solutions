@@ -226,6 +226,7 @@ namespace Land_of_Logic_52_60
         static bool sudoku(int[][] matrix)
         {
             List<int> subGrid = new List<int>();
+           
             for (int i = 0; i < matrix.Length - 2; i += 3)
             {
                 for (int j = 0; j < matrix[i].Length - 2; j += 3)
@@ -244,7 +245,44 @@ namespace Land_of_Logic_52_60
                         return false;
                 }
             }
+            //column
+            subGrid.Clear();
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                for (int j = 0; j < matrix[i].Length; j++)
+                {
+                    subGrid.Add(matrix[i][j]);
+                }
+            }
+            subGrid.Sort();
+            if (string.Join("", subGrid.ToArray()) != "123456789")
+                return false;
 
+            //row
+           
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                subGrid.Clear();
+                for (int j = 0; j < matrix[i].Length; j++)
+                {
+                    subGrid.Add(matrix[j][i]);
+                }
+                subGrid.Sort();
+                if (string.Join("", subGrid.ToArray()) != "123456789")
+                    return false;
+            }
+            //column
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                subGrid.Clear();
+                for (int j = 0; j < matrix[i].Length; j++)
+                {
+                    subGrid.Add(matrix[i][j]);
+                }
+                subGrid.Sort();
+                if (string.Join("", subGrid.ToArray()) != "123456789")
+                    return false;
+            }
             return true;
         }
         //bool sudoku(int[][] a)
